@@ -35,7 +35,9 @@
             <div class="row">
 
                 <meu-painel class="col-md-2 painel-animado" ng-repeat="foto in fotos | filter: filtro" titulo="{{foto.titulo}}">
-                    <img class="img-responsive center-block" src="{{foto.url}}" alt="{{foto.titulo}}">
+                    
+                    <minha-foto url="{{foto.url}}" titulo="{{foto.titulo}}" ></minha-foto>
+
                 </meu-painel>
 
             </div>
@@ -45,6 +47,8 @@
         <script src="js/main.js"></script>
         <script src="js/controllers/fotos-controller.js"></script>
         <script src="js/directives/minhas-diretivas.js"></script>
+        <script src="js/directives/meu-painel.js"></script>
+        <script src="js/directives/minha-foto.js"></script>
 
     </body>
 </html>
